@@ -1,0 +1,8 @@
+<mat-sidenav-container class="ils-sidenav-container">
+  <mat-sidenav class="ils-sidenav" [mode]='mode' #sidenav >
+    <ils-nav-list [items]="items$" (itemClick)="onItemClick($event)"></ils-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="ils-sidenav-content">
+    <ils-main-content></ils-main-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>
